@@ -1,4 +1,4 @@
 [submodule "Assets/GRILL_DIS"]
 	path = Assets/GRILL_DIS
-	url = http://10.0.1.229/GRILL/unitydisplugin.git
+	url = https://github.com/AF-GRILL/DISPluginForUnity.git
 	branch = main

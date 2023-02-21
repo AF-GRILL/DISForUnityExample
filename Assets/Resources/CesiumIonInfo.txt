@@ -1,0 +1,8 @@
+{
+    "WorldTerrainCesiumURL": "",
+    "WorldTerrainCesiumIonToken": "",
+    "WorldTerrainCesiumIonAssetID": 1,
+    "RasterOverlayCesiumURL": "",
+    "RasterOverlayCesiumIonToken": "",
+    "RasterOverlayCesiumIonAssetID": 2
+}

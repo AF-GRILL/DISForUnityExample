@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e236a33d00a5150479f0dd3d66ad5462, type: 3}
+  m_Name: DISEnumerationMapping_1
+  m_EditorClassIdentifier: 
+  EntityTypeMappings:
+  - friendlyName: MiG29
+    entityTypes:
+    - entityKind: 1
+      domain: 2
+      country: 222
+      category: 1
+      subcategory: 2
+      specific: 0
+      extra: 0
+    gameObject: {fileID: 1956214152485627141, guid: cc025ea5ac43a9d49a49752365932ede, type: 3}
+  - friendlyName: F16
+    entityTypes:
+    - entityKind: 1
+      domain: 2
+      country: 225
+      category: 1
+      subcategory: 3
+      specific: 0
+      extra: 0
+    - entityKind: 1
+      domain: 2
+      country: 225
+      category: 1
+      subcategory: 3
+      specific: 3
+      extra: 1
+    gameObject: {fileID: 5026676291199360922, guid: acc3c80bed66b8b48ab805ae17ca454b, type: 3}
+  - friendlyName: SA-6
+    entityTypes:
+    - entityKind: 1
+      domain: 1
+      country: 222
+      category: 28
+      subcategory: 6
+      specific: 2
+      extra: 0
+    - entityKind: 1
+      domain: 1
+      country: 222
+      category: 28
+      subcategory: 6
+      specific: 2
+      extra: 1
+    - entityKind: 1
+      domain: 1
+      country: 222
+      category: 28
+      subcategory: 6
+      specific: 2
+      extra: 2
+    - entityKind: 1
+      domain: 1
+      country: 222
+      category: 28
+      subcategory: 6
+      specific: 2
+      extra: 3
+    - entityKind: 1
+      domain: 1
+      country: 222
+      category: 28
+      subcategory: 7
+      specific: 2
+      extra: 0
+    gameObject: {fileID: 3802636480310262518, guid: 50bc3deef0cf65544b6cedece44537b1, type: 3}
+  - friendlyName: GBU-12
+    entityTypes:
+    - entityKind: 2
+      domain: 1
+      country: 225
+      category: 1
+      subcategory: 1
+      specific: 3
+      extra: 0
+    - entityKind: 2
+      domain: 9
+      country: 225
+      category: 1
+      subcategory: 14
+      specific: 0
+      extra: 0
+    - entityKind: 2
+      domain: 9
+      country: 225
+      category: 1
+      subcategory: 14
+      specific: 1
+      extra: 0
+    - entityKind: 2
+      domain: 9
+      country: 225
+      category: 1
+      subcategory: 14
+      specific: 1
+      extra: 2
+    - entityKind: 2
+      domain: 9
+      country: 225
+      category: 1
+      subcategory: 14
+      specific: 1
+      extra: 3
+    gameObject: {fileID: 8753433290528980919, guid: 872045d29a04fd44fa9bd309e568a47e, type: 3}

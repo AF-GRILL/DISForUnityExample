@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1571543552656292083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7013019212180022477}
+  - component: {fileID: -8410270594564131224}
+  - component: {fileID: -6067673683094527101}
+  m_Layer: 0
+  m_Name: DISEntity_ExampleSending
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7013019212180022477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571543552656292083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.7676373, y: -0.28645277, z: 8.071079}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8410270594564131224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571543552656292083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f433d33c11d379a4a97ac9a1cdede88c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _adjustOrientationForGlobeWhenMoving: 1
+  _detectTransformChanges: 1
+  _positionAuthority: 0
+  _latitude: 0
+  _longitude: 0
+  _height: 0
+  _ecefX: 6378137
+  _ecefY: 0
+  _ecefZ: 0
+  _unityX: 0
+  _unityY: 0
+  _unityZ: 0
+--- !u!114 &-6067673683094527101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571543552656292083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecef31195abc39c46964c397a8536d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DISGameManager: {fileID: 0}
+  CurrentEntityType:
+    entityKind: 1
+    domain: 2
+    country: 225
+    category: 1
+    subcategory: 3
+    specific: 3
+    extra: 0
+  CurrentEntityID:
+    site: 14
+    application: 3
+    entity: 1
+  EntityForceID: 1
+  EntityMarking: Example
+  DISHeartbeatSeconds: 5
+  EntityStatePDUSendingMode: 1
+  EntityStateCalculationRate: 0.1
+  EntityAppearance: 0
+  EntityCapabilities: 0
+  DeadReckoningAlgorithm: 4
+  DeadReckoningPositionThresholdMeters: 1
+  DeadReckoningOrientationThresholdDegrees: 3

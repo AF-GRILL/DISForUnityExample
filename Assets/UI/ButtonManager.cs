@@ -89,9 +89,9 @@ public class ButtonManager : MonoBehaviour
         onDISOptionsChangedEvent = new OnDISOptionsChangedEvent();
         onDISOptionsChangedEvent.AddListener(setPluginSettings);
 
+        SetupDropDowns();
         LoadOptions();
         ApplyOptions();
-        SetupDropDowns();
         StartCoroutine(removeCesiumAttibutionWait());
         
     }
@@ -239,7 +239,7 @@ public class ButtonManager : MonoBehaviour
             siteID.text = menuSettings.GetSiteID().ToString();
             applicationID.text = menuSettings.GetApplicationID().ToString();
 
-            connectReceiveSocket.isOn = menuSettings.GetConnectSendSocket();
+            connectReceiveSocket.isOn = menuSettings.GetConnectRecvSocket();
             receiveUseMulticast.isOn = menuSettings.GetIsUsingMulticast();
             receiveLoopback.isOn = menuSettings.GetReceiveLoopback();
             IPToInputFields(menuSettings.GetReceiverIP(), receiverIP);

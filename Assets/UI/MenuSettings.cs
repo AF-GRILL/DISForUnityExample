@@ -30,7 +30,7 @@ public class MenuSettings
     private string receiverIP;
     private int receiverPort;
     private bool connectSendSocket;
-    private ConnectionType connectionType;
+    private EConnectionType connectionType;
     private string senderIP;
     private int senderPort;
     private bool showLabels;
@@ -66,8 +66,8 @@ public class MenuSettings
     public bool GetConnectSendSocket() { return connectSendSocket; }
     public void SetConnectSendSocket(bool ConnectSendSocket) { connectSendSocket = ConnectSendSocket; }
 
-    public ConnectionType GetConnectionType() { return connectionType; }
-    public void SetConnectionType(ConnectionType ConnectionType) { connectionType = ConnectionType; }
+    public EConnectionType GetConnectionType() { return connectionType; }
+    public void SetConnectionType(EConnectionType ConnectionType) { connectionType = ConnectionType; }
 
     public string GetSenderIP() { return senderIP; }
     public void SetSenderIP(string SenderIP) { senderIP = SenderIP; }
@@ -104,7 +104,7 @@ public class MenuSettings
         temp.SetReceiverIP(PlayerPrefs.GetString(KEY_RECEIVER_IP));
         temp.SetReceiverPort(PlayerPrefs.GetInt(KEY_RECEIVER_PORT));
         temp.SetConnectSendSocket(PlayerPrefs.GetInt(KEY_CONNECT_SEND_SOCKET) == 1);
-        temp.SetConnectionType((ConnectionType)PlayerPrefs.GetInt(KEY_SEND_CONNECTION_TYPE));
+        temp.SetConnectionType((EConnectionType)PlayerPrefs.GetInt(KEY_SEND_CONNECTION_TYPE));
         temp.SetSenderIP(PlayerPrefs.GetString(KEY_SENDER_IP));
         temp.SetSenderPort(PlayerPrefs.GetInt(KEY_SENDER_PORT));
         temp.SetShowLabels(PlayerPrefs.GetInt(KEY_SHOW_LABELS) == 1);

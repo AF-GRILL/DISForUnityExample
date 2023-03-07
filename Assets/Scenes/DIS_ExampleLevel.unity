@@ -5339,7 +5339,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 54344307}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.87695706
+  m_Size: 0.89918125
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10083,7 +10083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 737399912351865395, guid: ac3b4d2bd0fb5e1469619f05f8224d4c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.10474396
+      value: 0.10473633
       objectReference: {fileID: 0}
     - target: {fileID: 737399912351865395, guid: ac3b4d2bd0fb5e1469619f05f8224d4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12722,6 +12722,14 @@ PrefabInstance:
     - target: {fileID: 4715385717272172708, guid: 9afe344d97309c84f8135e4cfb82783a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150663692621447177, guid: 9afe344d97309c84f8135e4cfb82783a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150663692621447191, guid: 9afe344d97309c84f8135e4cfb82783a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -6020364586545084380, guid: 9afe344d97309c84f8135e4cfb82783a, type: 3}

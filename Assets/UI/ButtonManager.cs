@@ -214,7 +214,7 @@ public class ButtonManager : MonoBehaviour
 
         //Sender
         menuSettings.SetConnectSendSocket(connectSendSocket.isOn);
-        menuSettings.SetConnectionType((ConnectionType)sendConnectionType.value);
+        menuSettings.SetConnectionType((EConnectionType)sendConnectionType.value);
         menuSettings.SetSenderIP(InputFieldsToIP(senderIP));
         menuSettings.SetSenderPort(int.Parse(senderPort.text));
 
@@ -338,7 +338,7 @@ public class ButtonManager : MonoBehaviour
         entityTrails.AddOptions(EnumsToStrings(new EntityTrails()));
 
         sendConnectionType.ClearOptions();
-        sendConnectionType.AddOptions(EnumsToStrings(new ConnectionType()));
+        sendConnectionType.AddOptions(EnumsToStrings(new EConnectionType()));
 
         followTypeDropDown.ClearOptions();
         followTypeDropDown.AddOptions(EnumsToStrings(new FollowType()));

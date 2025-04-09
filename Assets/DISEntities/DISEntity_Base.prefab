@@ -227,6 +227,7 @@ MonoBehaviour:
   GroundClampingCollisionLayer:
     serializedVersion: 2
     m_Bits: 1
+  ApplyToOwner: 0
   OnDeadReckoningUpdate:
     m_PersistentCalls:
       m_Calls:
@@ -323,7 +324,38 @@ MonoBehaviour:
   OnStartResumePDUProcessed:
     m_PersistentCalls:
       m_Calls: []
+  OnElectronicEmissionsPDUProcessed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSignalPDUProcessed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDesignatorPDUProcessed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGroundClampingUpdate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7080474709499516856}
+        m_TargetAssemblyTypeName: DISUpdateHandlerExample, Assembly-CSharp
+        m_MethodName: HandleGroundClampingUpdate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   CurrentEntityType:
+    useSpecific_EntityKind: 1
+    useSpecific_Domain: 1
+    useSpecific_Country: 1
+    useSpecific_Category: 1
+    useSpecific_Subcategory: 1
+    useSpecific_Specific: 1
+    useSpecific_Extra: 1
     entityKind: 0
     domain: 0
     country: 0
@@ -358,7 +390,9 @@ MonoBehaviour:
   entityMarking: 
   forceID: 0
   disEnumeration: 
+  trailWidthMultiplier: 0
   isEntityRibbonTrailEnabled: 1
+  ribbonWidth: 0
 --- !u!1 &5373213462196211853
 GameObject:
   m_ObjectHideFlags: 0

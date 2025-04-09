@@ -13,9 +13,16 @@ MonoBehaviour:
   m_Name: DISEnumerationMapping_1
   m_EditorClassIdentifier: 
   EntityTypeMappings:
-  - friendlyName: MiG29
+  - friendlyName: MiG-29
     entityTypes:
-    - entityKind: 1
+    - useSpecific_EntityKind: 1
+      useSpecific_Domain: 1
+      useSpecific_Country: 1
+      useSpecific_Category: 1
+      useSpecific_Subcategory: 1
+      useSpecific_Specific: 1
+      useSpecific_Extra: 1
+      entityKind: 1
       domain: 2
       country: 222
       category: 1
@@ -23,54 +30,47 @@ MonoBehaviour:
       specific: 0
       extra: 0
     gameObject: {fileID: 1956214152485627141, guid: cc025ea5ac43a9d49a49752365932ede, type: 3}
-  - friendlyName: F16
+  - friendlyName: F-16
     entityTypes:
-    - entityKind: 1
+    - useSpecific_EntityKind: 1
+      useSpecific_Domain: 1
+      useSpecific_Country: 1
+      useSpecific_Category: 1
+      useSpecific_Subcategory: 1
+      useSpecific_Specific: 0
+      useSpecific_Extra: 0
+      entityKind: 1
       domain: 2
       country: 225
       category: 1
       subcategory: 3
       specific: 0
       extra: 0
-    - entityKind: 1
-      domain: 2
-      country: 225
-      category: 1
-      subcategory: 3
-      specific: 3
-      extra: 1
     gameObject: {fileID: 5026676291199360922, guid: acc3c80bed66b8b48ab805ae17ca454b, type: 3}
   - friendlyName: SA-6
     entityTypes:
-    - entityKind: 1
+    - useSpecific_EntityKind: 1
+      useSpecific_Domain: 1
+      useSpecific_Country: 1
+      useSpecific_Category: 1
+      useSpecific_Subcategory: 1
+      useSpecific_Specific: 1
+      useSpecific_Extra: 0
+      entityKind: 1
       domain: 1
       country: 222
       category: 28
       subcategory: 6
       specific: 2
       extra: 0
-    - entityKind: 1
-      domain: 1
-      country: 222
-      category: 28
-      subcategory: 6
-      specific: 2
-      extra: 1
-    - entityKind: 1
-      domain: 1
-      country: 222
-      category: 28
-      subcategory: 6
-      specific: 2
-      extra: 2
-    - entityKind: 1
-      domain: 1
-      country: 222
-      category: 28
-      subcategory: 6
-      specific: 2
-      extra: 3
-    - entityKind: 1
+    - useSpecific_EntityKind: 1
+      useSpecific_Domain: 1
+      useSpecific_Country: 1
+      useSpecific_Category: 1
+      useSpecific_Subcategory: 1
+      useSpecific_Specific: 1
+      useSpecific_Extra: 1
+      entityKind: 1
       domain: 1
       country: 222
       category: 28
@@ -80,39 +80,32 @@ MonoBehaviour:
     gameObject: {fileID: 3802636480310262518, guid: 50bc3deef0cf65544b6cedece44537b1, type: 3}
   - friendlyName: GBU-12
     entityTypes:
-    - entityKind: 2
+    - useSpecific_EntityKind: 1
+      useSpecific_Domain: 1
+      useSpecific_Country: 1
+      useSpecific_Category: 1
+      useSpecific_Subcategory: 1
+      useSpecific_Specific: 1
+      useSpecific_Extra: 1
+      entityKind: 2
       domain: 1
       country: 225
       category: 1
       subcategory: 1
       specific: 3
       extra: 0
-    - entityKind: 2
+    - useSpecific_EntityKind: 1
+      useSpecific_Domain: 1
+      useSpecific_Country: 1
+      useSpecific_Category: 1
+      useSpecific_Subcategory: 1
+      useSpecific_Specific: 0
+      useSpecific_Extra: 0
+      entityKind: 2
       domain: 9
       country: 225
       category: 1
       subcategory: 14
       specific: 0
       extra: 0
-    - entityKind: 2
-      domain: 9
-      country: 225
-      category: 1
-      subcategory: 14
-      specific: 1
-      extra: 0
-    - entityKind: 2
-      domain: 9
-      country: 225
-      category: 1
-      subcategory: 14
-      specific: 1
-      extra: 2
-    - entityKind: 2
-      domain: 9
-      country: 225
-      category: 1
-      subcategory: 14
-      specific: 1
-      extra: 3
     gameObject: {fileID: 8753433290528980919, guid: 872045d29a04fd44fa9bd309e568a47e, type: 3}

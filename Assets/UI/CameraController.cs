@@ -89,10 +89,9 @@ public class CameraController : MonoBehaviour
 
     public void LateUpdate()
     {
-        if (currentFollow == FollowType.Orbital_View_Global)
+        if (currentFollow == FollowType.Orbital_View_Global && EntityListEntry.selected && EntityListEntry.selected.disEntity)
         {
-            camArm.transform.rotation =
-                Quaternion.Euler(-EntityListEntry.selected.disEntity.transform.rotation.x, -EntityListEntry.selected.disEntity.transform.rotation.y, -EntityListEntry.selected.disEntity.transform.rotation.z);
+            camArm.transform.rotation = Quaternion.Euler(-EntityListEntry.selected.disEntity.transform.rotation.x, -EntityListEntry.selected.disEntity.transform.rotation.y, -EntityListEntry.selected.disEntity.transform.rotation.z);
         }
     }
 
@@ -157,8 +156,11 @@ public class CameraController : MonoBehaviour
         {
             case FollowType.Free_Flying:
                 mainCam.transform.parent = CesiumGeoreference.transform;
-                mainCam.transform.position = EntityListEntry.selected.location.position;
-                mainCam.transform.rotation = new Quaternion(0, 0, 0, 0);
+                if (EntityListEntry.selected)
+                {
+                    mainCam.transform.position = EntityListEntry.selected.location.position;
+                    mainCam.transform.rotation = new Quaternion(0, 0, 0, 0);
+                }
 
                 camArm.transform.parent = CesiumGeoreference.transform;
                 camArm.transform.localPosition = Vector3.zero;

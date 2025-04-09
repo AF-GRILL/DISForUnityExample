@@ -10,7 +10,7 @@ public class DISUpdateHandlerExample : MonoBehaviour
     private DISReceiveComponent disComponent;
     private CesiumGlobeAnchor cesiumGlobeAnchorScript;
     private TrailRenderer trailRenderer;
-
+ 
     private void Start()
     {
         disComponent = GetComponent<DISReceiveComponent>();
@@ -21,11 +21,11 @@ public class DISUpdateHandlerExample : MonoBehaviour
     {
         if (cesiumGlobeAnchorScript)
         {
-            FLatLonAlt llh = Conversions.CalculateLatLonHeightFromEcefXYZ(DeadReckonedPDUIn.EntityLocation);
+            Conversions.CalculateLatLonHeightFromEcefXYZ(DeadReckonedPDUIn.EntityLocation, out FLatLonAlt llh);
 
             Orientation entityOrientation = DeadReckonedPDUIn.EntityOrientation;
 
-            FHeadingPitchRoll hpr = Conversions.CalculateHeadingPitchRollDegreesFromPsiThetaPhiRadiansAtLatLon(new FPsiThetaPhi(entityOrientation), llh.Latitude, llh.Longitude);
+            FHeadingPitchRoll hpr = Conversions.CalculateHeadingPitchRollDegreesFromPsiThetaPhiRadiansAtLatLon(new FPsiThetaPhi(entityOrientation), llh);
 
             cesiumGlobeAnchorScript.SetPositionEarthCenteredEarthFixed(DeadReckonedPDUIn.EntityLocation.X, DeadReckonedPDUIn.EntityLocation.Y, DeadReckonedPDUIn.EntityLocation.Z);
 
@@ -38,11 +38,11 @@ public class DISUpdateHandlerExample : MonoBehaviour
     {
         if (cesiumGlobeAnchorScript)
         {
-            FLatLonAlt llh = Conversions.CalculateLatLonHeightFromEcefXYZ(EntityStatePDUIn.EntityLocation);
+            Conversions.CalculateLatLonHeightFromEcefXYZ(EntityStatePDUIn.EntityLocation, out FLatLonAlt llh);
 
             Orientation entityOrientation = EntityStatePDUIn.EntityOrientation;
 
-            FHeadingPitchRoll hpr = Conversions.CalculateHeadingPitchRollDegreesFromPsiThetaPhiRadiansAtLatLon(new FPsiThetaPhi(entityOrientation), llh.Latitude, llh.Longitude);
+            FHeadingPitchRoll hpr = Conversions.CalculateHeadingPitchRollDegreesFromPsiThetaPhiRadiansAtLatLon(new FPsiThetaPhi(entityOrientation), llh);
 
             cesiumGlobeAnchorScript.SetPositionEarthCenteredEarthFixed(EntityStatePDUIn.EntityLocation.X, EntityStatePDUIn.EntityLocation.Y, EntityStatePDUIn.EntityLocation.Z);
 
@@ -81,5 +81,10 @@ public class DISUpdateHandlerExample : MonoBehaviour
     public void HandleEntityStateUpdateProcessed(EntityStateUpdatePdu EntityStateUpdatePDUIn)
     {
 
+    }
+
+    public void HandleGroundClampingUpdate(Vector3 GoundClampPosition, Quaternion GroundClampRotation)
+    {
+        cesiumGlobeAnchorScript.SetPositionUnity(GoundClampPosition.x, GoundClampPosition.y, GoundClampPosition.z);
     }
 }
